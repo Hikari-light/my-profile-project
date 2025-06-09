@@ -1,0 +1,164 @@
+{
+  "metadata": {
+    "title": "我的技术主页",
+    "description": "全栈开发工程师的个人主页"
+  },
+  "nav": {
+    "home": "主页",
+    "projects": "项目列表",
+    "contact": "联系我"
+  },
+  "hero": {
+    "title": "全栈工程师",
+    "description": "专注于打造高质量的 Web 应用，擅长 Next.js、Nest.js 等技术栈。三年全栈开发经验，参与多个中小型项目开发。",
+    "contactButton": "联系我",
+    "projectsButton": "查看项目"
+  },
+  "skills": {
+    "title": "我的技术栈",
+    "frontend": {
+      "title": "前端开发",
+      "description": "构建现代化的用户界面",
+      "items": {
+        "nextjs": {
+          "name": "Next.js & React",
+          "level": "精通",
+          "desc": "构建现代化 Web 应用"
+        },
+        "typescript": {
+          "name": "TypeScript",
+          "level": "精通",
+          "desc": "类型安全的代码开发"
+        },
+        "tailwind": {
+          "name": "Tailwind CSS",
+          "level": "熟练",
+          "desc": "响应式样式设计"
+        },
+        "ui": {
+          "name": "Shadcn/ui",
+          "level": "熟练",
+          "desc": "组件化界面开发"
+        }
+      }
+    },
+    "backend": {
+      "title": "后端开发",
+      "description": "设计可扩展的服务端架构",
+      "items": {
+        "nodejs": {
+          "name": "Node.js & NestJS",
+          "level": "精通",
+          "desc": "服务端应用开发"
+        },
+        "database": {
+          "name": "数据库设计",
+          "level": "精通",
+          "desc": "数据模型与关系设计"
+        },
+        "rest": {
+          "name": "RESTful API",
+          "level": "熟练",
+          "desc": "接口规范与开发"
+        },
+        "graphql": {
+          "name": "GraphQL",
+          "level": "熟练",
+          "desc": "灵活的数据查询"
+        }
+      }
+    },
+    "devops": {
+      "title": "数据库 & DevOps",
+      "description": "数据管理和自动化部署",
+      "items": {
+        "mongodb": {
+          "name": "MongoDB",
+          "level": "精通",
+          "desc": "文档数据库应用"
+        },
+        "postgresql": {
+          "name": "PostgreSQL",
+          "level": "精通",
+          "desc": "关系数据库管理"
+        },
+        "docker": {
+          "name": "Docker",
+          "level": "熟练",
+          "desc": "容器化部署"
+        },
+        "cicd": {
+          "name": "CI/CD",
+          "level": "熟练",
+          "desc": "自动化流程构建"
+        }
+      }
+    }
+  },
+  "cta": {
+    "title": "寻找远程工作机会",
+    "description": "我正在寻找富有挑战性的远程工作机会，如果您的团队需要一位经验丰富的全栈开发工程师，我很乐意与您详细讨论。",
+    "contactButton": "联系我"
+  },
+  "techStack": {
+    "title": "本站技术栈",
+    "nextjs": {
+      "name": "Next.js 15",
+      "desc": "React框架"
+    },
+    "tailwind": {
+      "name": "Tailwind CSS",
+      "desc": "样式框架"
+    },
+    "shadcn": {
+      "name": "Shadcn/ui",
+      "desc": "组件库"
+    },
+    "supabase": {
+      "name": "Supabase",
+      "desc": "数据存储"
+    },
+    "description": "基于现代 Web 技术栈构建，采用 TypeScript 确保类型安全，使用 Tailwind CSS 实现响应式设计，shadcn/ui 提供精美组件，Supabase 提供后端服务支持。"
+  },
+  "projects": {
+    "title": "我的项目",
+    "description": "以下是我最近完成的一些项目",
+    "viewProject": "查看项目",
+    "techStack": "技术栈"
+  },
+  "contact": {
+    "title": "联系我",
+    "description": "如果您有任何问题或合作意向，请随时联系我。",
+    "nameLabel": "姓名",
+    "namePlaceholder": "请输入您的姓名",
+    "emailLabel": "邮箱",
+    "emailPlaceholder": "请输入您的邮箱地址",
+    "messageLabel": "留言内容",
+    "messagePlaceholder": "请输入您想说的话",
+    "submitButton": "提交留言",
+    "submitting": "提交中...",
+    "errorMessage": "提交失败，请稍后重试",
+    "thankYou": "感谢您的留言！",
+    "responsePromise": "我会尽快回复您。",
+    "sendAnother": "发送另一条消息",
+    "limitExceeded": "您今天的提交次数已达上限（5次），请明天再试。",
+    "limitExceededWithHours": "您今天的提交次数已达到上限，请 {hours} 小时后再试。",
+    "remainingSubmissions": "今天还可以提交 {count} 次留言",
+    "errors": {
+      "nameRequired": "名字至少需要2个字符",
+      "nameTooLong": "名字不能超过20个字符",
+      "emailRequired": "邮箱不能为空",
+      "emailTooLong": "邮箱不能超过30个字符",
+      "emailInvalid": "请输入有效的电子邮箱地址",
+      "messageRequired": "消息至少需要10个字符",
+      "messageTooLong": "消息不能超过80个字符"
+    }
+  },
+  "footer": {
+    "techStack": "技术栈",
+    "navigation": "导航",
+    "contact": "联系方式",
+    "copyright": "© {year} 个人作品集. 保留所有权利.",
+    "builtWith": "使用 {nextjs} 和 {shadcn} 构建"
+  }
+}

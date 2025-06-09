@@ -1,0 +1,164 @@
+{
+  "metadata": {
+    "title": "My Tech Homepage",
+    "description": "Full Stack Developer's Personal Homepage"
+  },
+  "projects": {
+    "title": "My Projects",
+    "description": "Here are some of my recent projects",
+    "viewProject": "View Project",
+    "techStack": "Tech Stack"
+  },
+  "contact": {
+    "title": "Contact Me",
+    "description": "If you have any questions or collaboration interests, feel free to reach out.",
+    "nameLabel": "Name",
+    "namePlaceholder": "Please enter your name",
+    "emailLabel": "Email",
+    "emailPlaceholder": "Please enter your email address",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Please enter your message",
+    "submitButton": "Submit",
+    "submitting": "Submitting...",
+    "errorMessage": "Submission failed, please try again later",
+    "thankYou": "Thank you for your message!",
+    "responsePromise": "I'll get back to you soon.",
+    "sendAnother": "Send another message",
+    "limitExceeded": "You've reached today's submission limit (5 times), please try again tomorrow.",
+    "limitExceededWithHours": "You've reached today's submission limit, please try again in {hours} hours.",
+    "remainingSubmissions": "You can submit {count} more messages today",
+    "errors": {
+      "nameRequired": "Name must be at least 2 characters",
+      "nameTooLong": "Name cannot exceed 20 characters",
+      "emailRequired": "Email cannot be empty",
+      "emailTooLong": "Email cannot exceed 30 characters",
+      "emailInvalid": "Please enter a valid email address",
+      "messageRequired": "Message must be at least 10 characters",
+      "messageTooLong": "Message cannot exceed 80 characters"
+    }
+  },
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Full Stack Developer",
+    "description": "Focused on building high-quality web applications, proficient in Next.js, Nest.js and other tech stacks. Three years of full-stack development experience, participated in multiple small and medium-sized projects.",
+    "contactButton": "Contact Me",
+    "projectsButton": "View Projects"
+  },
+  "skills": {
+    "title": "My Tech Stack",
+    "frontend": {
+      "title": "Frontend Development",
+      "description": "Building modern user interfaces",
+      "items": {
+        "nextjs": {
+          "name": "Next.js & React",
+          "level": "Expert",
+          "desc": "Building modern web applications"
+        },
+        "typescript": {
+          "name": "TypeScript",
+          "level": "Expert",
+          "desc": "Type-safe code development"
+        },
+        "tailwind": {
+          "name": "Tailwind CSS",
+          "level": "Proficient",
+          "desc": "Responsive styling"
+        },
+        "ui": {
+          "name": "Shadcn/ui",
+          "level": "Proficient",
+          "desc": "Component-based UI development"
+        }
+      }
+    },
+    "backend": {
+      "title": "Backend Development",
+      "description": "Designing scalable server architectures",
+      "items": {
+        "nodejs": {
+          "name": "Node.js & NestJS",
+          "level": "Expert",
+          "desc": "Server-side application development"
+        },
+        "database": {
+          "name": "Database Design",
+          "level": "Expert",
+          "desc": "Data modeling and relationships"
+        },
+        "rest": {
+          "name": "RESTful API",
+          "level": "Proficient",
+          "desc": "API standards and development"
+        },
+        "graphql": {
+          "name": "GraphQL",
+          "level": "Proficient",
+          "desc": "Flexible data querying"
+        }
+      }
+    },
+    "devops": {
+      "title": "Database & DevOps",
+      "description": "Data management and automated deployment",
+      "items": {
+        "mongodb": {
+          "name": "MongoDB",
+          "level": "Expert",
+          "desc": "Document database applications"
+        },
+        "postgresql": {
+          "name": "PostgreSQL",
+          "level": "Expert",
+          "desc": "Relational database management"
+        },
+        "docker": {
+          "name": "Docker",
+          "level": "Proficient",
+          "desc": "Containerized deployment"
+        },
+        "cicd": {
+          "name": "CI/CD",
+          "level": "Proficient",
+          "desc": "Automated workflow building"
+        }
+      }
+    }
+  },
+  "cta": {
+    "title": "Looking for Remote Work",
+    "description": "I'm seeking challenging remote work opportunities. If your team needs an experienced full-stack developer, I'd be happy to discuss in detail.",
+    "contactButton": "Contact Me"
+  },
+  "techStack": {
+    "title": "Site Tech Stack",
+    "nextjs": {
+      "name": "Next.js 15",
+      "desc": "React Framework"
+    },
+    "tailwind": {
+      "name": "Tailwind CSS",
+      "desc": "Styling Framework"
+    },
+    "shadcn": {
+      "name": "Shadcn/ui",
+      "desc": "Component Library"
+    },
+    "supabase": {
+      "name": "Supabase",
+      "desc": "Data Storage"
+    },
+    "description": "Built with modern web technologies, using TypeScript for type safety, Tailwind CSS for responsive design, shadcn/ui for beautiful components, and Supabase for backend services."
+  },
+  "footer": {
+    "techStack": "Tech Stack",
+    "navigation": "Navigation",
+    "contact": "Contact",
+    "copyright": "© {year} Personal Portfolio. All rights reserved.",
+    "builtWith": "Built with {nextjs} and {shadcn}"
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "metadata": {
+    "title": "技術ポートフォリオ",
+    "description": "フルスタックエンジニアのポートフォリオ"
+  },  "nav": {
+    "home": "ホーム",
+    "projects": "プロジェクト",
+    "contact": "お問い合わせ"
+  },
+  "contact": {
+    "title": "お問い合わせ",
+    "description": "ご質問やお仕事のご相談など、お気軽にお問い合わせください。",
+    "nameLabel": "お名前",
+    "namePlaceholder": "お名前を入力してください",
+    "emailLabel": "メールアドレス",
+    "emailPlaceholder": "メールアドレスを入力してください",
+    "messageLabel": "メッセージ",
+    "messagePlaceholder": "メッセージを入力してください",
+    "submitButton": "送信する",
+    "submitting": "送信中...",
+    "errorMessage": "送信に失敗しました。後でもう一度お試しください。",
+    "thankYou": "お問い合わせありがとうございます！",
+    "responsePromise": "できるだけ早くご返信いたします。",
+    "sendAnother": "別のメッセージを送る",
+    "limitExceeded": "本日の送信回数制限（5回）に達しました。明日またお試しください。",
+    "limitExceededWithHours": "本日の送信回数制限に達しました。{hours}時間後にお試しください。",
+    "remainingSubmissions": "本日あと{count}回メッセージを送信できます",
+    "errors": {
+      "nameRequired": "名前は2文字以上必要です",
+      "nameTooLong": "名前は20文字以内で入力してください",
+      "emailRequired": "メールアドレスを入力してください",
+      "emailTooLong": "メールアドレスは30文字以内で入力してください",
+      "emailInvalid": "有効なメールアドレスを入力してください",
+      "messageRequired": "メッセージは10文字以上必要です",
+      "messageTooLong": "メッセージは80文字以内で入力してください"
+    }
+  },
+  "hero": {
+    "title": "フルスタックエンジニア",
+    "description": "高品質なWebアプリケーションの開発に特化し、Next.js、Nest.jsなどの技術を得意としています。3年間のフルスタック開発経験があり、複数の中規模プロジェクトに参加してきました。",
+    "contactButton": "お問い合わせ",
+    "projectsButton": "プロジェクトを見る"
+  },
+  "skills": {
+    "title": "スキルセット",
+    "frontend": {
+      "title": "フロントエンド開発",
+      "description": "モダンなユーザーインターフェースの構築",
+      "nextjs": {
+        "name": "Next.js & React",
+        "level": "熟練",
+        "desc": "モダンなWebアプリケーションの開発"
+      },
+      "typescript": {
+        "name": "TypeScript",
+        "level": "熟練",
+        "desc": "型安全なコード開発"
+      },
+      "tailwind": {
+        "name": "Tailwind CSS",
+        "level": "熟練",
+        "desc": "レスポンシブデザインの実装"
+      },
+      "ui": {
+        "name": "UIフレームワーク",
+        "level": "熟練",
+        "desc": "コンポーネントベースのUI開発"
+      }
+    },
+    "backend": {
+      "title": "バックエンド開発",
+      "description": "スケーラブルなサーバーアーキテクチャの設計",
+      "nodejs": {
+        "name": "Node.js & NestJS",
+        "level": "熟練",
+        "desc": "サーバーサイドアプリケーション開発"
+      },
+      "database": {
+        "name": "データベース設計",
+        "level": "熟練",
+        "desc": "データモデリングとリレーション"
+      },
+      "rest": {
+        "name": "RESTful API",
+        "level": "熟練",
+        "desc": "API仕様と開発"
+      },
+      "graphql": {
+        "name": "GraphQL",
+        "level": "上級",
+        "desc": "柔軟なデータクエリ"
+      }
+    },
+    "devops": {
+      "title": "データベース & DevOps",
+      "description": "データ管理と自動化デプロイメント",
+      "mongodb": {
+        "name": "MongoDB",
+        "level": "熟練",
+        "desc": "ドキュメントデータベースアプリケーション"
+      },
+      "postgresql": {
+        "name": "PostgreSQL",
+        "level": "熟練",
+        "desc": "リレーショナルデータベース管理"
+      },
+      "docker": {
+        "name": "Docker",
+        "level": "上級",
+        "desc": "コンテナ化デプロイメント"
+      },
+      "cicd": {
+        "name": "CI/CD",
+        "level": "上級",
+        "desc": "自動化ワークフローの構築"
+      }
+    }
+  },
+  "cta": {
+    "title": "リモートワーク機会を探しています",
+    "description": "やりがいのあるリモートワークの機会を探しています。経験豊富なフルスタック開発者が必要な場合は、ぜひご相談ください。",
+    "contactButton": "お問い合わせ"
+  },
+  "techStack": {
+    "title": "使用技術",
+    "nextjs": {
+      "name": "Next.js 15",
+      "desc": "Reactフレームワーク"
+    },
+    "tailwind": {
+      "name": "Tailwind CSS",
+      "desc": "スタイリング"
+    },
+    "shadcn": {
+      "name": "Shadcn/ui",
+      "desc": "コンポーネント"
+    },
+    "supabase": {
+      "name": "Supabase",
+      "desc": "データストレージ"
+    },
+    "description": "最新のWeb技術を使用し、TypeScriptで型安全性を確保、Tailwind CSSでレスポンシブデザインを実現、shadcn/uiで美しいコンポーネントを提供、Supabaseでバックエンドサービスをサポートしています。"
+  },
+  "projects": {
+    "title": "プロジェクト",
+    "description": "最近のプロジェクト実績をご紹介します",
+    "viewProject": "詳細を見る",
+    "techStack": "使用技術"
+  },
+  "footer": {
+    "techStack": "使用技術",
+    "navigation": "ナビゲーション",
+    "contact": "お問い合わせ",
+    "copyright": "© {year} ポートフォリオ. All rights reserved.",
+    "builtWith": "{nextjs}と{shadcn}で構築"
+  }
+}
