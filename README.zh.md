@@ -41,10 +41,25 @@ yarn install
 pnpm install
 ```
 
-3. 复制 `.env.example` 到 `.env.local` 并填写环境变量:
-```bash
-cp .env.example .env.local
-```
+3. 配置环境变量:
+   - 复制 `.env.example` 到 `.env.local`
+   - 填写你的 Supabase 凭证和其他配置
+   ```bash
+   cp .env.example .env.local
+   ```
+   必需的环境变量:
+   ```env
+   # Supabase 配置
+   NEXT_PUBLIC_SUPABASE_URL=你的项目URL
+   NEXT_PUBLIC_SUPABASE_ANON_KEY=你的匿名密钥
+
+   # 联系表单配置
+   NEXT_PUBLIC_CONTACT_FORM_SUBMISSION_LIMIT=5
+   NEXT_PUBLIC_CONTACT_FORM_RESET_HOURS=24
+
+   # 站点配置
+   NEXT_PUBLIC_SITE_URL=http://localhost:3000
+   ```
 
 4. 运行开发服务器:
 ```bash
@@ -72,6 +87,15 @@ pnpm dev
 ## 部署
 
 本项目已配置好 Vercel 部署。只需将 GitHub 仓库连接到 Vercel，它将自动部署你的网站。
+
+### 生产环境变量配置
+
+在部署到 Vercel 时，请确保在项目设置中配置以下环境变量：
+
+1. 进入 Vercel 项目设置
+2. 导航到"环境变量"部分
+3. 添加 `.env.local` 文件中的所有变量
+4. 部署项目
 
 ## 贡献
 

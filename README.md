@@ -41,10 +41,25 @@ yarn install
 pnpm install
 ```
 
-3. Copy `.env.example` to `.env.local` and fill in your environment variables:
-```bash
-cp .env.example .env.local
-```
+3. Set up environment variables:
+   - Copy `.env.example` to `.env.local`
+   - Fill in your Supabase credentials and other configuration
+   ```bash
+   cp .env.example .env.local
+   ```
+   Required environment variables:
+   ```env
+   # Supabase Configuration
+   NEXT_PUBLIC_SUPABASE_URL=your-project-url
+   NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
+
+   # Contact Form Configuration
+   NEXT_PUBLIC_CONTACT_FORM_SUBMISSION_LIMIT=5
+   NEXT_PUBLIC_CONTACT_FORM_RESET_HOURS=24
+
+   # Site Configuration
+   NEXT_PUBLIC_SITE_URL=http://localhost:3000
+   ```
 
 4. Run the development server:
 ```bash
@@ -72,6 +87,15 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ## Deployment
 
 This project is configured for deployment on Vercel. Simply connect your GitHub repository to Vercel and it will automatically deploy your site.
+
+### Environment Variables in Production
+
+When deploying to Vercel, make sure to configure the following environment variables in your project settings:
+
+1. Go to your project settings in Vercel
+2. Navigate to the "Environment Variables" section
+3. Add all the variables from your `.env.local` file
+4. Deploy your project
 
 ## Contributing
 
