@@ -61,20 +61,21 @@ export default function Home({ params }: Props) {
               <CardDescription>{dict.skills.frontend.description}</CardDescription>
             </CardHeader>
             <CardContent className="space-y-3 pt-0">
-              {Object.entries(dict.skills.frontend)
-                .filter(([key]) => !["title", "description"].includes(key))
-                .map(([key, skill]) => {
-                  const typedSkill = skill as SkillEntry;
-                  return (
-                    <div key={key} className="space-y-1">
-                      <div className="flex items-center justify-between">
-                        <span className="font-medium">{typedSkill.name}</span>
-                        <span className="text-sm text-muted-foreground">{typedSkill.level}</span>
+              {dict.skills.frontend?.items
+                ? Object.entries(dict.skills.frontend.items).map(([key, skill]) => {
+                    const typedSkill = skill as SkillEntry;
+                    return (
+                      <div key={key} className="space-y-1">
+                        <div className="flex items-center justify-between">
+                          <span className="font-medium">{typedSkill.name}</span>
+                          <span className="text-sm text-muted-foreground">{typedSkill.level}</span>
+                        </div>
+                        <p className="text-sm text-muted-foreground">{typedSkill.desc}</p>
                       </div>
-                      <p className="text-sm text-muted-foreground">{typedSkill.desc}</p>
-                    </div>
-                  );
-                })}
+                    );
+                  })
+                : <p className="text-sm text-muted-foreground">No frontend skills data available.</p>
+              }
             </CardContent>
           </Card>
 
@@ -85,20 +86,21 @@ export default function Home({ params }: Props) {
               <CardDescription>{dict.skills.backend.description}</CardDescription>
             </CardHeader>
             <CardContent className="space-y-3 pt-0">
-              {Object.entries(dict.skills.backend)
-                .filter(([key]) => !["title", "description"].includes(key))
-                .map(([key, skill]) => {
-                  const typedSkill = skill as SkillEntry;
-                  return (
-                    <div key={key} className="space-y-1">
-                      <div className="flex items-center justify-between">
-                        <span className="font-medium">{typedSkill.name}</span>
-                        <span className="text-sm text-muted-foreground">{typedSkill.level}</span>
+              {dict.skills.backend?.items
+                ? Object.entries(dict.skills.backend.items).map(([key, skill]) => {
+                    const typedSkill = skill as SkillEntry;
+                    return (
+                      <div key={key} className="space-y-1">
+                        <div className="flex items-center justify-between">
+                          <span className="font-medium">{typedSkill.name}</span>
+                          <span className="text-sm text-muted-foreground">{typedSkill.level}</span>
+                        </div>
+                        <p className="text-sm text-muted-foreground">{typedSkill.desc}</p>
                       </div>
-                      <p className="text-sm text-muted-foreground">{typedSkill.desc}</p>
-                    </div>
-                  );
-                })}
+                    );
+                  })
+                : <p className="text-sm text-muted-foreground">No backend skills data available.</p>
+              }
             </CardContent>
           </Card>
 
@@ -109,20 +111,21 @@ export default function Home({ params }: Props) {
               <CardDescription>{dict.skills.devops.description}</CardDescription>
             </CardHeader>
             <CardContent className="space-y-3 pt-0">
-              {Object.entries(dict.skills.devops)
-                .filter(([key]) => !["title", "description"].includes(key))
-                .map(([key, skill]) => {
-                  const typedSkill = skill as SkillEntry;
-                  return (
-                    <div key={key} className="space-y-1">
-                      <div className="flex items-center justify-between">
-                        <span className="font-medium">{typedSkill.name}</span>
-                        <span className="text-sm text-muted-foreground">{typedSkill.level}</span>
+              {dict.skills.devops?.items
+                ? Object.entries(dict.skills.devops.items).map(([key, skill]) => {
+                    const typedSkill = skill as SkillEntry;
+                    return (
+                      <div key={key} className="space-y-1">
+                        <div className="flex items-center justify-between">
+                          <span className="font-medium">{typedSkill.name}</span>
+                          <span className="text-sm text-muted-foreground">{typedSkill.level}</span>
+                        </div>
+                        <p className="text-sm text-muted-foreground">{typedSkill.desc}</p>
                       </div>
-                      <p className="text-sm text-muted-foreground">{typedSkill.desc}</p>
-                    </div>
-                  );
-                })}
+                    );
+                  })
+                : <p className="text-sm text-muted-foreground">No devops skills data available.</p>
+              }
             </CardContent>
           </Card>
         </div>

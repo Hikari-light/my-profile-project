@@ -16,76 +16,35 @@ export interface DictionaryEntry {
   };
   skills: {
     title: string;
+    description: string;
     frontend: {
       title: string;
       description: string;
-      nextjs: {
-        name: string;
-        level: string;
-        desc: string;
-      };
-      typescript: {
-        name: string;
-        level: string;
-        desc: string;
-      };
-      tailwind: {
-        name: string;
-        level: string;
-        desc: string;
-      };
-      ui: {
-        name: string;
-        level: string;
-        desc: string;
+      items: {
+        nextjs: { name: string; level: string; desc: string };
+        typescript: { name: string; level: string; desc: string };
+        tailwind: { name: string; level: string; desc: string };
+        ui: { name: string; level: string; desc: string };
       };
     };
     backend: {
       title: string;
       description: string;
-      nodejs: {
-        name: string;
-        level: string;
-        desc: string;
-      };
-      database: {
-        name: string;
-        level: string;
-        desc: string;
-      };
-      rest: {
-        name: string;
-        level: string;
-        desc: string;
-      };
-      graphql: {
-        name: string;
-        level: string;
-        desc: string;
+      items: {
+        nestjs: { name: string; level: string; desc: string };
+        supabase: { name: string; level: string; desc: string };
+        prisma: { name: string; level: string; desc: string };
+        database: { name: string; level: string; desc: string };
       };
     };
     devops: {
       title: string;
       description: string;
-      mongodb: {
-        name: string;
-        level: string;
-        desc: string;
-      };
-      postgresql: {
-        name: string;
-        level: string;
-        desc: string;
-      };
-      docker: {
-        name: string;
-        level: string;
-        desc: string;
-      };
-      cicd: {
-        name: string;
-        level: string;
-        desc: string;
+      items: {
+        docker: { name: string; level: string; desc: string };
+        github: { name: string; level: string; desc: string };
+        vercel: { name: string; level: string; desc: string };
+        linux: { name: string; level: string; desc: string };
       };
     };
   };

@@ -31,7 +31,7 @@ export default function ContactPage({ params }: Props) {
   const dict = getClientDictionary(lang)
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
-  const [error, setError] = useState<string | null>(null)
+  const [submitError, setSubmitError] = useState<string | null>(null)
   const [remainingSubmissions, setRemainingSubmissions] = useState<number | null>(null)
   const [validationState, setValidationState] = useState({
     name: { isValid: true, message: "" },
@@ -76,18 +76,32 @@ export default function ContactPage({ params }: Props) {
       }
     })
     return () => subscription.unsubscribe()
-  }, [form.watch])
+  }, [form, formSchema])
+
+  useEffect(() => {
+    const checkSubmissionLimit = async () => {
+      try {
+        const response = await fetch('/api/check-limit')
+        const data = await response.json()
+        setRemainingSubmissions(data.remainingSubmissions)
+      } catch (error) {
+        console.error('Error checking submission limit:', error)
+      }
+    }
+
+    checkSubmissionLimit()
+  }, [])
 
   const onSubmit = async (data: z.infer<typeof formSchema>) => {
     try {
       setIsSubmitting(true)
-      setError(null)
+      setSubmitError(null)
       
       // 检查提交限制
       const { canSubmit, remainingSubmissions: remaining, error: limitError } = await checkSubmissionLimit(lang)
       
       if (!canSubmit) {
-        setError(limitError || dict.contact.errorMessage)
+        setSubmitError(limitError || dict.contact.errorMessage)
         return
       }
       
@@ -108,7 +122,7 @@ export default function ContactPage({ params }: Props) {
       setIsSubmitted(true)
     } catch (err) {
       console.error("提交表单时出错:", err)
-      setError(dict.contact.errorMessage)
+      setSubmitError(dict.contact.errorMessage)
     } finally {
       setIsSubmitting(false)
     }
@@ -151,9 +165,9 @@ export default function ContactPage({ params }: Props) {
           {dict.nav.contact}
         </h1>
         
-        {error && (
+        {submitError && (
           <Alert variant="destructive" className="mb-6">
-            <AlertDescription>{error}</AlertDescription>
+            <AlertDescription>{submitError}</AlertDescription>
           </Alert>
         )}
         

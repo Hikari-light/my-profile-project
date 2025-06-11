@@ -43,76 +43,83 @@
   },
   "skills": {
     "title": "スキルセット",
+    "description": "主な技術スキルの概要です。",
     "frontend": {
       "title": "フロントエンド開発",
       "description": "モダンなユーザーインターフェースの構築",
-      "nextjs": {
-        "name": "Next.js & React",
-        "level": "熟練",
-        "desc": "モダンなWebアプリケーションの開発"
-      },
-      "typescript": {
-        "name": "TypeScript",
-        "level": "熟練",
-        "desc": "型安全なコード開発"
-      },
-      "tailwind": {
-        "name": "Tailwind CSS",
-        "level": "熟練",
-        "desc": "レスポンシブデザインの実装"
-      },
-      "ui": {
-        "name": "UIフレームワーク",
-        "level": "熟練",
-        "desc": "コンポーネントベースのUI開発"
+      "items": {
+        "nextjs": {
+          "name": "Next.js & React",
+          "level": "熟練",
+          "desc": "モダンなWebアプリケーションの開発"
+        },
+        "typescript": {
+          "name": "TypeScript",
+          "level": "熟練",
+          "desc": "型安全なコード開発"
+        },
+        "tailwind": {
+          "name": "Tailwind CSS",
+          "level": "熟練",
+          "desc": "レスポンシブデザインの実装"
+        },
+        "ui": {
+          "name": "UIフレームワーク",
+          "level": "熟練",
+          "desc": "コンポーネントベースのUI開発"
+        }
       }
     },
     "backend": {
       "title": "バックエンド開発",
       "description": "スケーラブルなサーバーアーキテクチャの設計",
-      "nodejs": {
-        "name": "Node.js & NestJS",
-        "level": "熟練",
-        "desc": "サーバーサイドアプリケーション開発"
-      },
-      "database": {
-        "name": "データベース設計",
-        "level": "熟練",
-        "desc": "データモデリングとリレーション"
-      },
-      "rest": {
-        "name": "RESTful API",
-        "level": "熟練",
-        "desc": "API仕様と開発"
-      },
-      "graphql": {
-        "name": "GraphQL",
-        "level": "上級",
-        "desc": "柔軟なデータクエリ"
+      "items": {
+        "nestjs": {
+          "name": "Node.js & NestJS",
+          "level": "熟練",
+          "desc": "サーバーサイドアプリケーション開発"
+        },
+        "supabase": {
+          "name": "データベース設計",
+          "level": "熟練",
+          "desc": "データモデリングとリレーション"
+        },
+        "prisma": {
+          "name": "RESTful API",
+          "level": "熟練",
+          "desc": "API仕様と開発"
+        },
+        "database": {
+          "name": "GraphQL",
+          "level": "上級",
+          "desc": "柔軟なデータクエリ"
+        }
       }
     },
     "devops": {
       "title": "データベース & DevOps",
       "description": "データ管理と自動化デプロイメント",
-      "mongodb": {
-        "name": "MongoDB",
-        "level": "熟練",
-        "desc": "ドキュメントデータベースアプリケーション"
-      },
-      "postgresql": {
-        "name": "PostgreSQL",
-        "level": "熟練",
-        "desc": "リレーショナルデータベース管理"
-      },
-      "docker": {
-        "name": "Docker",
-        "level": "上級",
-        "desc": "コンテナ化デプロイメント"
-      },
-      "cicd": {
-        "name": "CI/CD",
-        "level": "上級",
-        "desc": "自動化ワークフローの構築"
+      "items": {
+        "docker": {
+          "name": "Docker",
+          "level": "上級",
+          "desc": "コンテナ化デプロイメント"
+        },
+        "github": {
+          "name": "GitHub",
+          "level": "熟練",
+          "desc": "バージョン管理とCI/CD"
+        },
+        "vercel": {
+          "name": "Vercel",
+          "level": "熟練",
+          "desc": "クラウドデプロイメント"
+        },
+        "linux": {
+          "name": "Linux",
+          "level": "上級",
+          "desc": "サーバー管理と自動化"
+        }
       }
     }
   },

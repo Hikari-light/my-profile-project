@@ -50,6 +50,7 @@
   },
   "skills": {
     "title": "My Tech Stack",
+    "description": "A summary of my main technical skills.",
     "frontend": {
       "title": "Frontend Development",
       "description": "Building modern user interfaces",
@@ -70,7 +71,7 @@
           "desc": "Responsive styling"
         },
         "ui": {
-          "name": "Shadcn/ui",
+          "name": "UI Framework",
           "level": "Proficient",
           "desc": "Component-based UI development"
         }
@@ -80,22 +81,22 @@
       "title": "Backend Development",
       "description": "Designing scalable server architectures",
       "items": {
-        "nodejs": {
+        "nestjs": {
           "name": "Node.js & NestJS",
           "level": "Expert",
           "desc": "Server-side application development"
         },
-        "database": {
+        "supabase": {
           "name": "Database Design",
           "level": "Expert",
           "desc": "Data modeling and relationships"
         },
-        "rest": {
+        "prisma": {
           "name": "RESTful API",
           "level": "Proficient",
           "desc": "API standards and development"
         },
-        "graphql": {
+        "database": {
           "name": "GraphQL",
           "level": "Proficient",
           "desc": "Flexible data querying"
@@ -106,25 +107,25 @@
       "title": "Database & DevOps",
       "description": "Data management and automated deployment",
       "items": {
-        "mongodb": {
-          "name": "MongoDB",
-          "level": "Expert",
-          "desc": "Document database applications"
-        },
-        "postgresql": {
-          "name": "PostgreSQL",
-          "level": "Expert",
-          "desc": "Relational database management"
-        },
         "docker": {
           "name": "Docker",
           "level": "Proficient",
           "desc": "Containerized deployment"
         },
-        "cicd": {
-          "name": "CI/CD",
+        "github": {
+          "name": "GitHub",
           "level": "Proficient",
-          "desc": "Automated workflow building"
+          "desc": "Version control and CI/CD"
+        },
+        "vercel": {
+          "name": "Vercel",
+          "level": "Proficient",
+          "desc": "Cloud deployment"
+        },
+        "linux": {
+          "name": "Linux",
+          "level": "Proficient",
+          "desc": "Server management and automation"
         }
       }
     }

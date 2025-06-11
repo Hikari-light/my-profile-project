@@ -16,6 +16,7 @@
   },
   "skills": {
     "title": "我的技术栈",
+    "description": "我的主要技术能力概览。",
     "frontend": {
       "title": "前端开发",
       "description": "构建现代化的用户界面",
@@ -36,7 +37,7 @@
           "desc": "响应式样式设计"
         },
         "ui": {
-          "name": "Shadcn/ui",
+          "name": "UI框架",
           "level": "熟练",
           "desc": "组件化界面开发"
         }
@@ -46,22 +47,22 @@
       "title": "后端开发",
       "description": "设计可扩展的服务端架构",
       "items": {
-        "nodejs": {
+        "nestjs": {
           "name": "Node.js & NestJS",
           "level": "精通",
           "desc": "服务端应用开发"
         },
-        "database": {
+        "supabase": {
           "name": "数据库设计",
           "level": "精通",
           "desc": "数据模型与关系设计"
         },
-        "rest": {
+        "prisma": {
           "name": "RESTful API",
           "level": "熟练",
           "desc": "接口规范与开发"
         },
-        "graphql": {
+        "database": {
           "name": "GraphQL",
           "level": "熟练",
           "desc": "灵活的数据查询"
@@ -72,25 +73,25 @@
       "title": "数据库 & DevOps",
       "description": "数据管理和自动化部署",
       "items": {
-        "mongodb": {
-          "name": "MongoDB",
-          "level": "精通",
-          "desc": "文档数据库应用"
-        },
-        "postgresql": {
-          "name": "PostgreSQL",
-          "level": "精通",
-          "desc": "关系数据库管理"
-        },
         "docker": {
           "name": "Docker",
           "level": "熟练",
           "desc": "容器化部署"
         },
-        "cicd": {
-          "name": "CI/CD",
+        "github": {
+          "name": "GitHub",
           "level": "熟练",
-          "desc": "自动化流程构建"
+          "desc": "版本控制与CI/CD"
+        },
+        "vercel": {
+          "name": "Vercel",
+          "level": "熟练",
+          "desc": "云部署"
+        },
+        "linux": {
+          "name": "Linux",
+          "level": "熟练",
+          "desc": "服务器管理与自动化"
         }
       }
     }
