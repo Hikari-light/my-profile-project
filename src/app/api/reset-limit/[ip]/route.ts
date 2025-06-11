@@ -1,16 +1,21 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { supabase } from '@/lib/supabase'
 
-// @ts-expect-error - Next.js 15 App Router type generation issue
+type RouteContext = {
+  params: {
+    ip: string
+  }
+}
+
 export async function DELETE(
   request: NextRequest,
-  { params }: { params: { ip: string } }
+  context: RouteContext
 ) {
   try {
     const { error } = await supabase
       .from('submission_limits')
       .delete()
-      .eq('ip', params.ip)
+      .eq('ip', context.params.ip)
 
     if (error) {
       return NextResponse.json({ error: error.message }, { status: 500 })
